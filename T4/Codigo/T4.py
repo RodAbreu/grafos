@@ -68,18 +68,6 @@ def matriz_t(trail):
    draw(dijkstra_c,True,"dijkstra_c")
 
 
-A = np.loadtxt('wg59_dist.txt')
-G = nx.from_numpy_matrix(A)
-nx.draw_networkx(G)
-plt.savefig('inicial.pdf')
-plt.show()
-
-
-matriz_t(dijkstra(G,0))
-
-nx.draw_networkx(newG)
-plt.savefig('final.pdf')
-plt.show()
 
 
 
